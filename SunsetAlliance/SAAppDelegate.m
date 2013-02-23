@@ -7,12 +7,34 @@
 //
 
 #import "SAAppDelegate.h"
+#import "GAI.h"
+
+#ifdef DEBUG
+#define GA @"UA-25371300-2"
+#define VSN_SUFFIX @"+debug"
+#else
+#define GA @"UA-25371300-2"
+#define VSN_SUFFIX @"+release"
+#endif
 
 @implementation SAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSURLCache *urlCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:urlCache];
+    
+    NSString *build = [[NSBundle mainBundle]infoDictionary][@"CFBundleVersion"];
+    NSString *version = [[NSBundle mainBundle]infoDictionary][@"CFBundleShortVersionString"];
+    NSString *appVersion = [NSString stringWithFormat:@"%@.%@%@", version, build, VSN_SUFFIX];
+    
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    [GAI sharedInstance].dispatchInterval = 1;
+    [GAI sharedInstance].debug = YES;
+    id<GAITracker> tracker = [[GAI sharedInstance]trackerWithTrackingId:GA];
+    tracker.sessionTimeout = 5400; // set session timeout 90 minutes
+    tracker.appVersion = appVersion;
+    
     return YES;
 }
 							

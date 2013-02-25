@@ -62,10 +62,10 @@
 /* Begin PBXFileReference section */
 		669AC81310674E278AE732FD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A75F6791244D4A9C929D73 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		CA09DB8216C95C8F00D31CDF /* UIImage+Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Pixel.h"; path = "../UIImage+Pixel.h"; sourceTree = "<group>"; };
-		CA09DB8316C95C8F00D31CDF /* UIImage+Pixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Pixel.m"; path = "../UIImage+Pixel.m"; sourceTree = "<group>"; };
-		CA09DB8516C9719000D31CDF /* UIColor+Dark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Dark.h"; path = "../UIColor+Dark.h"; sourceTree = "<group>"; };
-		CA09DB8616C9719000D31CDF /* UIColor+Dark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Dark.m"; path = "../UIColor+Dark.m"; sourceTree = "<group>"; };
+		CA09DB8216C95C8F00D31CDF /* UIImage+Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pixel.h"; sourceTree = "<group>"; };
+		CA09DB8316C95C8F00D31CDF /* UIImage+Pixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Pixel.m"; sourceTree = "<group>"; };
+		CA09DB8516C9719000D31CDF /* UIColor+Dark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Dark.h"; sourceTree = "<group>"; };
+		CA09DB8616C9719000D31CDF /* UIColor+Dark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Dark.m"; sourceTree = "<group>"; };
 		CA0D0F7616D2C3CE00CD45BA /* KBSoThinterestingBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KBSoThinterestingBold.ttf; sourceTree = "<group>"; };
 		CA19773D16C20C3E008EF1AD /* HysteriaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HysteriaPlayer.h; sourceTree = "<group>"; };
 		CA19773E16C20C3E008EF1AD /* HysteriaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HysteriaPlayer.m; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				CA51C01816C9F9F400A208A5 /* UIFont+FontAwesome.h */,
 				CA51C01916C9F9F400A208A5 /* UIFont+FontAwesome.m */,
 			);
-			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		CA19773B16C20B98008EF1AD /* HysteriaPlayer */ = {
